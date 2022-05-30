@@ -46,8 +46,7 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         gap: 20px;
-        /* justify-content: space-between; */
-        flex-wrap: wrap;
+        justify-content: space-between;
 
       }
       #services>div {
@@ -107,13 +106,85 @@
       #works>div>div>p {
         padding: 0px 0 20px 10px;
         font-size: 14px;
-        /* color: #ababab; */
       }
 
 
 
       /* Medium Screen */
       @media only screen and (min-width: 500px) and (max-width: 768px) {
+        
+        #banner {
+          border-radius: 20px;
+          width: 90%;
+          margin: 40px auto;
+          background-color: #2f3996;
+          flex-direction: column;
+          text-align: center;
+        }
+        #banner>div:first-child>button {
+          padding: 8px 10px;
+          border-radius: 6px;
+          border: 0px solid transparent;
+        }
+        #banner>div:first-child {
+          padding: 60px 0 0 0;
+          color: white;
+          line-height: 32px;
+        }
+        #banner>div:first-child>p {
+          margin: 12px 0 8px 0;
+        }
+        #banner>div:last-child>img {
+          padding: 6% 0 0 0;
+          width: 450px;
+          height: 300px;
+        }
+        #services {
+          width: 90%;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repear (2, 1fr);
+          gap: 18px;
+        }
+        #services>div>p {
+          font-size: 14px;
+        }
+        #services>div>h3 {
+          padding: 20px 20px 0 20px;
+          font-size: 16px;
+        }
+
+        #works {
+          border: 1px solid teal;
+          width: 90%;
+          margin: auto auto 70px auto;
+        }
+        #works>h1 {
+          margin: 40px auto 5px auto;
+          text-align: center;
+          font-size: 24px;
+        }
+        #works>p {
+          margin: 0 auto 20px auto;
+          text-align: center;
+          font-size: 14px;
+        }
+        #works>div {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          gap: 30px 20px;
+        }
+        #works>div>div>img {
+          width: 100%;
+          height: 150px;
+        }
+        #works>div>div>h3 {
+          padding: 10px 0 5px 10px;
+        }
+        #works>div>div>p {
+          padding: 0px 0 20px 10px;
+          font-size: 14px;
+        }
+
       }
 
       /* Small Screen */
